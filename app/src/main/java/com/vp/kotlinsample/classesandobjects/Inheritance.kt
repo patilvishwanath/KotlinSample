@@ -112,6 +112,8 @@ class AndDev(override val _name : String, val age: String, val salary: String, v
     }
 
 
+
+
 }
 
 class iOSDev(_name : String, _age: String,_salary: String, val _profession : String ):
@@ -147,12 +149,44 @@ class iOSDev(_name : String, _age: String,_salary: String, val _profession : Str
             "10.22",
             "Android Dev"
         )
-        and.displayEmployeeData()
-        and.displayEmployeeProfess()
+//        and.displayEmployeeData()
+//        and.displayEmployeeProfess()
+        
+        val copyAnd = and
+
+        println("${and.hashCode()} === ${copyAnd.hashCode()}" )
+        println(and == copyAnd)
+        println(and.equals(copyAnd))
+        println(and === copyAnd)
+        println()
+        println(and._name == copyAnd._name)
+        println(and._profession == copyAnd._profession)
+       println(and._profession.hashCode())
+        println(copyAnd._profession.hashCode())
 
     //    val ios = iOSDev("KP","20","12.22","IOS Dev")
     //    ios.displayEmployeeData()
     //    ios.displayEmployeeProfess()
+
+
+        val gh = 10000
+        val  hg : Int? = gh
+        val va : Int? = gh
+        println(gh === hg)
+        println(va === hg)
+
+
+        val first = Integer(10)
+        val second = Integer(10)
+
+        println("SA")
+        println(first == second)       //true
+        println(first.equals(second))  //true
+        println("${first.hashCode()} +++ ${second.hashCode()}")
+        println(first === second)      //false
+
+
+
 
 
     }
