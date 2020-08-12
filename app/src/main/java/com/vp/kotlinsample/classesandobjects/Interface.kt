@@ -1,6 +1,6 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.classesandobjects
 
-import com.vp.kotlinsample.IClickListener as IClickListener1
+import com.vp.kotlinsample.classesandobjects.IClickListener as IClickListener1
 
 /**
  * Created by Vishwanath Patil on 31/07/20.
@@ -51,7 +51,8 @@ abstract class ImplementInterface : IClickListener1 {
 
 }
 
-class SubClass : ImplementInterface(),Driveable{
+class SubClass : ImplementInterface(),
+    Driveable {
 
 //    override fun OnClick(postion: Int, item: Any) {
 //        super.OnClick(postion, item)
@@ -79,7 +80,7 @@ super<Driveable>.show()
 
 }
 
-class SClass :  Driveable{
+class SClass : Driveable {
     override fun drive() {
 
     }

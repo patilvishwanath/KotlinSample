@@ -1,4 +1,4 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.classesandobjects
 
 /**
  * Created by Vishwanath Patil on 29/07/20.
@@ -29,8 +29,19 @@ class Books(val name : String, val year : String, val author : String, val price
 }
 
 fun main() {
-    val ab = Books("VP","1990","vishu",190.00)
-    val abc = Books("SP","2019","sush",180.00,"Penguin Publication")
+    val ab = Books(
+        "VP",
+        "1990",
+        "vishu",
+        190.00
+    )
+    val abc = Books(
+        "SP",
+        "2019",
+        "sush",
+        180.00,
+        "Penguin Publication"
+    )
 //    val ef = Books(name = "SP",author = "Suchila",year = "1967")
 //    ab.display("Vishwa")
 //    ab.display("kedar",year="1990")

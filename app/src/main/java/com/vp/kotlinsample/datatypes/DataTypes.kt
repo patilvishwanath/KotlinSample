@@ -52,6 +52,11 @@ fun main() {
 
     val sd = 5 /2
     println(sd)
+
+
+    //Nullable Variables
+    var asd : String? = null // ? is used after DataType to make to variable Nullable
+    val dfg : String = "String"
 }
 
 

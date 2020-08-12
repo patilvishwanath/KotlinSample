@@ -1,8 +1,10 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.controlflow
 
 /**
  * Created by Vishwanath Patil on 28/07/20.
  */
+
+private var iintt : Double = 3.14
 
 fun main() {
 
@@ -14,7 +16,11 @@ fun main() {
     val readData = readLine()!!
     val stringArray = readData.split(",")
     println("${stringArray[0].toInt()},${stringArray[1].toInt()},${stringArray[2].toInt()}")
-    addNumbers(stringArray[0].toInt(),stringArray[1].toInt(),stringArray[2].toInt())
+    addNumbers(
+        stringArray[0].toInt(),
+        stringArray[1].toInt(),
+        stringArray[2].toInt()
+    )
 //    checkForVowel(readData?.toCharArray())
 // checkForEven(readData.toInt())
 //    println("Please enter char to find")

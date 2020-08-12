@@ -1,4 +1,4 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.classesandobjects
 
 /**
  * Created by Vishwanath Patil on 29/07/20.
@@ -16,8 +16,18 @@ class Book (val name : String, val author : String,val year : String,var isBorro
 }
 
 fun main(){
-    val lordOfRings = Book("Lord Of Rings", "J.K.Rowling","1990",true)
-    val threeMistakes = Book("Three Mistakes", "Chetan Bhagat","2005",false)
+    val lordOfRings = Book(
+        "Lord Of Rings",
+        "J.K.Rowling",
+        "1990",
+        true
+    )
+    val threeMistakes = Book(
+        "Three Mistakes",
+        "Chetan Bhagat",
+        "2005",
+        false
+    )
 
     lordOfRings.printBook()
     threeMistakes.printBook()

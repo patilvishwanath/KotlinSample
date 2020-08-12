@@ -1,4 +1,4 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.function
 
 /**
  * Created by Vishwanath Patil on 28/07/20.

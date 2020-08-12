@@ -1,4 +1,4 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.classesandobjects
 
 /**
  * Created by Vishwanath Patil on 30/07/20.
@@ -101,7 +101,8 @@ open class Employee(open val _name : String,val _age:String, val _salary : Strin
     }
 
 }
-class AndDev(override val _name : String, val age: String, val salary: String, val _profession : String ):Employee(_name, age, salary){
+class AndDev(override val _name : String, val age: String, val salary: String, val _profession : String ):
+    Employee(_name, age, salary){
 
     init {
         println("init AndDev :: I am $_profession")
@@ -113,7 +114,8 @@ class AndDev(override val _name : String, val age: String, val salary: String, v
 
 }
 
-class iOSDev(_name : String, _age: String,_salary: String, val _profession : String ):Employee(_name, _age, _salary){
+class iOSDev(_name : String, _age: String,_salary: String, val _profession : String ):
+    Employee(_name, _age, _salary){
 
     fun displayEmployeeProfess(){
         println("I am $_profession")
@@ -139,7 +141,12 @@ class iOSDev(_name : String, _age: String,_salary: String, val _profession : Str
     //    st.dis()
     //    st.add()
 
-        val and = AndDev("VP","30","10.22","Android Dev")
+        val and = AndDev(
+            "VP",
+            "30",
+            "10.22",
+            "Android Dev"
+        )
         and.displayEmployeeData()
         and.displayEmployeeProfess()
 

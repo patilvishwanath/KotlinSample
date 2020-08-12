@@ -1,4 +1,4 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.classesandobjects
 
 /**
  * Created by Vishwanath Patil on 30/07/20.

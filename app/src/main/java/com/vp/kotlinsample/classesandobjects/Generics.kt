@@ -1,4 +1,4 @@
-package com.vp.kotlinsample
+package com.vp.kotlinsample.classesandobjects
 
 /**
  * Created by Vishwanath Patil on 04/08/20.
@@ -21,10 +21,11 @@ class GenericsD<out VI>(text :VI){
 }
 
 fun main() {
-    val n = GenericsD("Hey, it is Vishwanath")
+    val n =
+        GenericsD("Hey, it is Vishwanath")
 
-    val np = Generics<Any>(10/10)
+    val np = Generics<Any>(10 / 10)
 
-    val ar = Generics<Any>(10,20,30)
+    val ar = Generics<Any>(10, 20, 30)
 
 }
